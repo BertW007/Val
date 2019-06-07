@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="16dp"
+    tools:context=".EstimatedInvestmentCostActivity">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/ski"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextSKI"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="000 000,00 PLN"
+        android:inputType="numberDecimal"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="@+id/textPWB"
+        app:layout_constraintStart_toStartOf="@+id/textPWB"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+    <TextView
+        android:id="@+id/textPWB"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="32dp"
+        android:text="Pw Powierzchnia wewnętrzna budynku [m2]:"
+        android:textAlignment="viewStart"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/editMGUS"
+        app:layout_constraintEnd_toEndOf="@+id/etitTextInterlnalArea"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etitTextInterlnalArea" />
+
+    <EditText
+        android:id="@+id/etitTextInterlnalArea"
+        android:layout_width="348dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="000 000,00 m2"
+        android:inputType="numberDecimal"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toTopOf="@+id/textPWB"
+        app:layout_constraintEnd_toEndOf="@+id/textMGUS"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textMGUS" />
+
+    <TextView
+        android:id="@+id/textMGUS"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="32dp"
+        android:text="Mgus - aktualny wskaźnik kosztu realizacji 1m2 w bud. mieszkaniowym opublikowany przez GUS:"
+        android:textAlignment="viewStart"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/editZ"
+        app:layout_constraintEnd_toEndOf="@+id/editMGUS"
+        app:layout_constraintStart_toStartOf="@+id/editMGUS" />
+
+    <EditText
+        android:id="@+id/editMGUS"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="000 PLN"
+        android:inputType="numberDecimal"
+        android:text=" 4 139 PLN"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toTopOf="@+id/textMGUS"
+        app:layout_constraintEnd_toEndOf="@+id/textZ"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textZ" />
+
+
+    <TextView
+        android:id="@+id/textZ"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="60dp"
+        android:text="Z - wskaźniki przypisane do kategorii inwestycji:"
+        android:textAlignment="viewStart"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editZ"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editZ" />
+
+    <EditText
+        android:id="@+id/editZ"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="0,0"
+        android:inputType="numberDecimal"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toTopOf="@+id/textZ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        android:focusable="false"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</android.support.constraint.ConstraintLayout>
